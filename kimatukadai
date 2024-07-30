@@ -1,0 +1,21 @@
+from datetime import date
+from __future__ import print_function
+from ipywidgets import interact, interactive, fixed, interact_manual
+import ipywidgets as widgets
+from IPython.display import display
+
+widgets.DatePicker(
+    description='Pick a Date',
+    disabled=False
+    )
+
+def f(ToDo):
+    print("ToDo",ToDo)
+    ToDo
+    return ToDo;
+interaction=interact(f, ToDo='なにを？');
+
+widgets.DatePicker(
+    description='Pick a Date',
+    disabled=False
+    )
